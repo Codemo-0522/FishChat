@@ -1,0 +1,107 @@
+# ---- Environment ----
+.env
+.env.*
+!.env.example
+*.env.local
+*.env.*.local
+
+# ---- Logs ----
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- OS / Editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ---- Frontend (Node/Vite/React/etc.) ----
+node_modules/
+dist/
+build/
+.out/
+.cache/
+.tmp/
+.eslintcache
+.vite/
+.vite-cache/
+coverage/
+
+# Next / Nuxt / SvelteKit / Angular
+.next/
+.vercel/
+.nuxt/
+.svelte-kit/
+.angular/
+storybook-static/
+.cypress/
+playwright-report/
+playwright/.cache/
+
+# Package managers
+.pnpm-store/
+
+# ---- Python / Backend ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging/build artifacts
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Type checking / test caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+.ipynb_checkpoints/
+
+# ---- App data & temp (do not commit) ----
+temp/
+data/
+models/
+backend/models/
+uploads/
+storage/
+media/
+*.sqlite3
+*.db
+*.pid
+
+# ---- Docker / Container aux ----
+.docker/
+docker-data/
+
+# ---- Misc ----
+*.bak
+*.tmp 

@@ -1,0 +1,138 @@
+{
+  "deepseek": {
+    "default": [
+      { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.9, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+      { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.7, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+      { "key": "top_k", "label": "Top K", "type": "integer", "min": 1, "max": 100, "step": 1, "default": 30, "mapTo": "top_k", "description": "每次从概率最高的K个词中采样" },
+      { "key": "presence_penalty", "label": "存在惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0.3, "mapTo": "presence_penalty", "description": "惩罚已出现过的话题，减少重复" },
+      { "key": "frequency_penalty", "label": "频率惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0.2, "mapTo": "frequency_penalty", "description": "惩罚频繁出现的词，降低重复" },
+      { "key": "repetition_penalty", "label": "重复惩罚", "type": "number", "min": 0.5, "max": 2.0, "step": 0.1, "default": 1.2, "mapTo": "repetition_penalty", "description": "提升或降低生成中重复片段的概率" },
+      { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 8192, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+    ]
+  },
+  "deepseek-chat": [
+    { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.9, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+    { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.7, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+    { "key": "top_k", "label": "Top K", "type": "integer", "min": 1, "max": 100, "step": 1, "default": 30, "mapTo": "top_k", "description": "每次从概率最高的K个词中采样" },
+    { "key": "presence_penalty", "label": "存在惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0.3, "mapTo": "presence_penalty", "description": "惩罚已出现过的话题，减少重复" },
+    { "key": "frequency_penalty", "label": "频率惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0.2, "mapTo": "frequency_penalty", "description": "惩罚频繁出现的词，降低重复" },
+    { "key": "repetition_penalty", "label": "重复惩罚", "type": "number", "min": 0.5, "max": 2.0, "step": 0.1, "default": 1.2, "mapTo": "repetition_penalty", "description": "提升或降低生成中重复片段的概率" },
+    { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 8192, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+  ],
+  "deepseek-coder": [
+    { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.9, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+    { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.7, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+    { "key": "top_k", "label": "Top K", "type": "integer", "min": 1, "max": 100, "step": 1, "default": 30, "mapTo": "top_k", "description": "每次从概率最高的K个词中采样" },
+    { "key": "presence_penalty", "label": "存在惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0.3, "mapTo": "presence_penalty", "description": "惩罚已出现过的话题，减少重复" },
+    { "key": "frequency_penalty", "label": "频率惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0.2, "mapTo": "frequency_penalty", "description": "惩罚频繁出现的词，降低重复" },
+    { "key": "repetition_penalty", "label": "重复惩罚", "type": "number", "min": 0.5, "max": 2.0, "step": 0.1, "default": 1.2, "mapTo": "repetition_penalty", "description": "提升或降低生成中重复片段的概率" },
+    { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 8192, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+  ],
+  "deepseek-reasoner": [
+    { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.9, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+    { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.7, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+    { "key": "top_k", "label": "Top K", "type": "integer", "min": 1, "max": 100, "step": 1, "default": 30, "mapTo": "top_k", "description": "每次从概率最高的K个词中采样" },
+    { "key": "presence_penalty", "label": "存在惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0.3, "mapTo": "presence_penalty", "description": "惩罚已出现过的话题，减少重复" },
+    { "key": "frequency_penalty", "label": "频率惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0.2, "mapTo": "frequency_penalty", "description": "惩罚频繁出现的词，降低重复" },
+    { "key": "repetition_penalty", "label": "重复惩罚", "type": "number", "min": 0.5, "max": 2.0, "step": 0.1, "default": 1.2, "mapTo": "repetition_penalty", "description": "提升或降低生成中重复片段的概率" },
+    { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 8192, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+  ],
+    "doubao": {
+      "default": [
+        { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.7, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+        { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.3, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+        { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 4096, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+      ]
+    },
+    "doubao-seed-1-6-thinking-250715": [
+      { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.7, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+      { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.3, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+      { "key": "presence_penalty", "label": "存在惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0, "mapTo": "presence_penalty", "description": "惩罚已出现过的话题，减少重复" },
+      { "key": "frequency_penalty", "label": "频率惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0, "mapTo": "frequency_penalty", "description": "惩罚频繁出现的词，降低重复" },
+      { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 4096, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+    ],
+    "doubao-seed-1-6-250615": [
+      { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.7, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+      { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.3, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+      { "key": "presence_penalty", "label": "存在惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0, "mapTo": "presence_penalty", "description": "惩罚已出现过的话题，减少重复" },
+      { "key": "frequency_penalty", "label": "频率惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0, "mapTo": "frequency_penalty", "description": "惩罚频繁出现的词，降低重复" },
+      { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 4096, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+    ],
+    "doubao-seed-1-6-flash-250715": [
+      { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.7, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+      { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.3, "map极To": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+      { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "极min": 1, "max": 8192, "step": 1, "default": 4096, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+    ],
+    "doubao-seed-1-6-flash-250615": [
+      { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.7, "mapTo": "极temperature", "description": "控制生成的随机性，值越高越发散" },
+      { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.3, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+      { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 4096, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+    ],
+
+    "doubao-1-5-thinking-pro-250415": [
+      { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.7, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+      { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.3, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+      { "key": "presence_penalty", "label": "存在惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0, "mapTo": "presence_penalty", "description": "惩罚已出现过的话题，减少重复" },
+      { "key": "frequency_penalty", "label": "频率惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0, "mapTo": "frequency_penalty", "description": "惩罚频繁出现的词，降低重复" },
+      { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 4096, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+    ],
+    "doubao-1-5-vision-pro-32k-250115": [
+      { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.7, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+      { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.3, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+      { "key": "presence_penalty", "label": "存在惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0, "mapTo": "presence_penalty", "description": "惩罚已出现过的话题，减少重复" },
+      { "key": "frequency_penalty", "label": "频率惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0, "mapTo": "frequency_penalty", "description": "惩罚频繁出现的词，降低重复" },
+      { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 4096, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+    ],
+
+    "doubao-1-5-thinking-vision-pro-250428": [
+      { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.7, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+      { "key": "top_p", "label": "极Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.3, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+    { "key": "presence_penalty", "label": "存在惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0, "mapTo": "presence_penalty", "description": "惩罚已出现过的话题，减少重复" },
+      { "key": "frequency_penalty", "label": "频率惩罚", "type": "number", "min": -2, "max": 2, "极step": 0.1, "default": 0, "mapTo": "frequency_penalty", "description": "惩罚频繁出现的词，降低重复" },
+      { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 4096, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+    ],
+    "doubao-1-5-ui-tars-250428": [
+      { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.7, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+      { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.3, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+      { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 4096, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+    ],
+    "doubao-1-5-pro-32k-250115": [
+      { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.7, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+      { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "极max": 1, "step": 0.01, "default": 0.3, "mapTo": "top_p", "description": "核采样阈值，控制采样词的极累积概率" },
+      { "key": "presence_penalty", "label": "存在惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0, "mapTo": "presence_penalty", "description": "惩罚已出现过的话题，减少重复" },
+      { "key": "frequency_penalty", "label": "频率惩罚", "type": "极number", "min": -2, "max": 2, "step": 0.1, "default": 0, "mapTo": "frequency_penalty", "description": "惩罚频繁出现的词，降低重复" },
+      { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 4096, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+    ],
+    "doubao-1-5-pro-32k-character-250715": [
+      { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.7, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+      { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.3, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+      { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 4096, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+    ],
+    "deepseek-r1-250528": [
+      { "key": "temperature", "label": "温度", "type极": "number", "min": 0, "max": 1, "step": 0.1, "default": 0.9, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+      { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.7, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+      { "key": "top_k", "label": "Top K", "type": "integer", "min": 1, "max": 100, "step": 1, "default": 30, "mapTo": "top_k", "description": "每次从概率最高的K个词中采样" },
+      { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 8192, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+    ],
+    "deepseek-v3-250324": [
+      { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.9, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+      { "key": "top_p", "label": "Top P", "type": "number", "极min": 0, "max": 1, "step": 0.01, "极default": 0.7, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+      { "key": "top_k", "label": "Top K", "type": "integer", "min": 1, "max": 100, "step": 1, "default": 30, "mapTo": "top_k", "description": "每次从概率最高的K个词中采样" },
+      { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 8192, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+    ],
+    "kimi-k2-250711": [
+      { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.7, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+      { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.3, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+      { "key": "top_k", "label": "Top K", "type": "integer", "min": 0, "max": 1000, "step": 1, "default": 0, "mapTo": "top_k", "description": "每次从概率最高的K个词中采样" },
+      { "key": "presence_penalty", "label": "存在惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0, "mapTo": "presence_penalty", "description": "惩罚已出现过的话题，减少重复" },
+      { "key": "frequency_penalty", "label": "频率惩罚", "type": "number", "min": -2, "max": 2, "step": 0.1, "default": 0, "mapTo": "frequency_penalty", "description": "惩罚频繁出现的词，降低重复" },
+      { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 4096, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+    ],
+  "ollama": {
+    "default": [
+      { "key": "temperature", "label": "温度", "type": "number", "min": 0, "max": 2, "step": 0.1, "default": 0.7, "mapTo": "temperature", "description": "控制生成的随机性，值越高越发散" },
+      { "key": "top_p", "label": "Top P", "type": "number", "min": 0, "max": 1, "step": 0.01, "default": 0.9, "mapTo": "top_p", "description": "核采样阈值，控制采样词的累积概率" },
+      { "key": "max_tokens", "label": "最大Tokens", "type": "integer", "min": 1, "max": 8192, "step": 1, "default": 2048, "mapTo": "max_tokens", "description": "单次回复的最大生成长度" }
+    ]
+  }
+} 

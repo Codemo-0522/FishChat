@@ -1,0 +1,196 @@
+.callLayout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: white;
+  position: relative;
+}
+
+.topBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 2;
+}
+
+/* 移除菜单按钮背景 */
+.menuButton {
+  background: transparent !important;
+  border: none !important;
+  color: white !important;
+  width: 44px;
+  height: 44px;
+  padding: 0 !important;
+}
+
+/* 开关按钮样式 */
+.topBar :global(.ant-switch) {
+  background: rgba(255, 255, 255, 0.15) !important;
+  min-width: 56px !important;
+  height: 24px !important;
+  border-radius: 12px !important;
+  padding: 0 !important;
+  line-height: 24px !important;
+}
+
+.topBar :global(.ant-switch-checked) {
+  background: #1890ff !important;
+}
+
+.topBar :global(.ant-switch-handle) {
+  width: 18px !important;
+  height: 18px !important;
+  top: 3px !important;
+  left: 3px !important;
+}
+
+.topBar :global(.ant-switch-checked) :global(.ant-switch-handle) {
+  left: calc(100% - 21px) !important;
+}
+
+.topBar :global(.ant-switch-inner-checked),
+.topBar :global(.ant-switch-inner-unchecked) {
+  font-size: 12px !important;
+  width: 100% !important;
+  height: 24px !important;
+  line-height: 24px !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.circleContainer {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: #f5a8bd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* 状态文本动画 */
+.status {
+  position: absolute;
+  bottom: 160px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  animation: dotAnimation 1.5s infinite;
+}
+
+@keyframes dotAnimation {
+  0% { opacity: 0.4; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-5px); }
+  100% { opacity: 0.4; transform: translateY(0); }
+}
+
+.subtitle {
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+/* 底部按钮样式 */
+.bottomBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 32px 50px;
+}
+
+.bottomBar button {
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: none !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: white !important;
+}
+
+/* 挂断按钮样式 */
+.bottomBar .hangupBtn {
+  background-color: #ff4757 !important;
+}
+
+.bottomBar .hangupBtn :global(.anticon) {
+  transform: rotate(-45deg) !important;
+  font-size: 32px;
+}
+
+/* 其他按钮图标 */
+.bottomBar .anticon {
+  font-size: 32px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .circleContainer {
+    width: 280px;
+    height: 280px;
+  }
+
+  .bottomBar {
+    padding: 30px 24px 40px;
+  }
+
+  .bottomBar button {
+    width: 70px !important;
+    height: 70px !important;
+  }
+
+  .bottomBar .anticon {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .circleContainer {
+    width: 240px;
+    height: 240px;
+  }
+
+  .bottomBar {
+    padding: 24px 20px 30px;
+  }
+
+  .bottomBar button {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .bottomBar .anticon {
+    font-size: 24px;
+  }
+} 
